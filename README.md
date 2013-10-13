@@ -8,3 +8,5 @@ Control and navigate in talbles with keybord and mouse.
     yPosition: 2
   });
 </pre>
+
+[Homepage (FR)](url:http://victordarras.fr/heavyTable/)
