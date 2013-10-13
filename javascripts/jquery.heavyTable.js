@@ -42,23 +42,18 @@
         return currentCell;
       }
       
-      function edit (currentElement, input, opts) {
-        $(input, opts})
-          .appendTo(currentCell)
-          .val(content)
-          .focus(); 
+      function edit (currentElement) {
+        var input = $('<input>', {type: "text"})
+          .val(currentElement.html())
+        currentElement.html(input)
+        input.focus(); 
       }
-
-      $hTable.find('td').dblclick( function () {
-        clearCell();
-        edit(selectCell());
-      });
 
       $hTable.find('td').click( function () {
         clearCell();
         x = ($hTable.find('td').index(this) % (max.x) + 1);
         y = ($hTable.find('tr').index($(this).parent()) + 1);
-        selectCell();
+        edit(selectCell());
       });
 
       $(document).keydown(function(e){
@@ -69,13 +64,13 @@
 
           clearCell();
           switch (e.keyCode) {
-            case 37: xPosition--;
+            case 37: x--;
             break;
-            case 38: yPosition--;
+            case 38: y--;
             break;
-            case 39: xPosition++;
+            case 39: x++;
             break;
-            case 40: yPosition++;
+            case 40: y++;
             break;
           }
           selectCell();
