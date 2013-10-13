@@ -5,6 +5,9 @@ body {
   background: steelblue;
   font-family: "Open Sans", arial;
 }
+a {
+  color: white;
+}
 table {
   width: 100%;
   max-width: 600px;
