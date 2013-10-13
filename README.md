@@ -9,4 +9,4 @@ Control and navigate in talbles with keybord and mouse.
   });
 </pre>
 
-[Homepage](http://victordarras.fr/heavyTable/)
+Example on this [page](http://victordarras.fr/heavyTable/)
