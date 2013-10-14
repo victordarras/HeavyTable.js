@@ -1,6 +1,6 @@
 # HeavyTable jQuery plugin :
 
-Control and navigate in talbles with keybord and mouse.
+Control and navigate in tables with keybord and mouse.
 
 <pre>
    $('.heavyTable').heavyTable({
